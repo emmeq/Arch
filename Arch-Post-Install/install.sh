@@ -4,12 +4,14 @@ set -e
 echo "🚀 Post-Omarchy Setup"
 
 sudo pacman -Syu
-sudo pacman -S --noconfirm git
+sudo pacman -S --noconfirm wget git
 
-# Flatpaks
+# Flatpaks (minimal, nur deine Apps)
 sudo pacman -S --noconfirm flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install -y flathub app.zen_browser.zen flathub dev.vencord.Vesktop com.obsproject.Studio org.prismlauncher.PrismLauncher
+
+# Nur deine 4 Apps, kein KDE-Mist
+flatpak install -y flathub org.zen_browser.zen com.vencord.Vesktop com.obsproject.Studio org.prismlauncher.PrismLauncher
 
 # Technorino
 mkdir -p ~/Apps ~/.local/share/icons
@@ -40,4 +42,3 @@ echo 'export PATH="$HOME/Apps:$PATH"' >> ~/.bashrc
 
 echo "✅ Fertig. Reboot in 5 Sekunden..."
 sudo reboot
-
