@@ -6,12 +6,11 @@ echo "🚀 Post-Omarchy Setup"
 sudo pacman -Syu
 sudo pacman -S --noconfirm wget git
 
-# Flatpaks (minimal, nur deine Apps)
+# Flatpaks (korrekte IDs)
 sudo pacman -S --noconfirm flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-# Nur deine 4 Apps, kein KDE-Mist
-flatpak install -y flathub org.zen_browser.zen com.vencord.Vesktop com.obsproject.Studio org.prismlauncher.PrismLauncher
+flatpak install -y flathub app.zen_browser.zen dev.vencord.Vesktop com.obsproject.Studio org.prismlauncher.PrismLauncher
 
 # Technorino
 mkdir -p ~/Apps ~/.local/share/icons
