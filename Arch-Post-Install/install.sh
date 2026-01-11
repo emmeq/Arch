@@ -3,7 +3,6 @@ set -e
 
 echo "🚀 Post-Omarchy Setup"
 
-sudo pacman -Syu
 sudo pacman -S --noconfirm wget git
 
 # Flatpaks (korrekte IDs)
