@@ -19,7 +19,7 @@ omarchy-webapp-remove Fizzy
 
 sudo pacman -Rns 1password-beta 1password-cli aether obs-studio obsidian kdenlive github-cli
 
-
+sudo pacman -S --noconfirm fuse2
 sudo pacman -S --noconfirm wget
 sudo pacman -S --noconfirm flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -37,7 +37,7 @@ wget -O ~/.local/share/icons/technorino.svg "https://chatterino.com/logo.svg"
 cat > ~/.local/share/applications/technorino.desktop << 'EOF'
 [Desktop Entry]
 Name=Technorino
-Exec=%h/Apps/Technorino-x86_64.AppImage
+Exec=~/Apps/Technorino-x86_64.AppImage
 Icon=technorino
 Type=Application
 Categories=Network;Chat;
