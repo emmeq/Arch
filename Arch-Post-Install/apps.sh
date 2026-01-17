@@ -25,7 +25,7 @@ sudo pacman -S --noconfirm flatpak
 sudo pacman -S --noconfirm sublime-text
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-flatpak install -y flathub app.zen_browser.zen dev.vencord.Vesktop com.obsproject.Studio org.prismlauncher.PrismLauncher com.github.tchx84.Flatseal
+flatpak install -y flathub app.zen_browser.zen dev.vencord.Vesktop com.obsproject.Studio org.prismlauncher.PrismLauncher com.github.tchx84.Flatseal io.github.kolunmi.Bazaar
 
 
 
